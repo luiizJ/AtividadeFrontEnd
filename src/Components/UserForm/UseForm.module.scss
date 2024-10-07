@@ -1,0 +1,42 @@
+.userForm {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  &:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+}
+
+.button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #2980b9;
+  }
+}
+
+.error {
+  color: #e74c3c; // Cor para mensagens de erro
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}

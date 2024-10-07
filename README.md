@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# User Management System
 
-First, run the development server:
+Um sistema simples de gerenciamento de usuários construído com React, TypeScript e SCSS Modules. Este projeto permite adicionar, editar e excluir usuários de uma lista.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [React](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces de usuário
+- [TypeScript](https://www.typescriptlang.org/) - Superset do JavaScript que adiciona tipagem estática
+- [SCSS](https://sass-lang.com/) - Pré-processador CSS que estende a linguagem CSS
+- [Axios](https://axios-http.com/) - Cliente HTTP baseado em promessa para fazer requisições
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Adicionar novos usuários
+- Editar usuários existentes
+- Excluir usuários
+- Visualização em tempo real da lista de usuários
+- Feedback de carregamento e erros
 
-## Learn More
+## Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+\`\`\`
+src/
+  ├─ Components/
+  │   ├─ Layout/
+  │   │   ├─ Layout.tsx
+  │   │   ├─ Layout.module.scss
+  │   ├─ Modal/
+  │   │   ├─ Modal.tsx
+  │   │   ├─ Modal.module.scss
+  │   ├─ UserForm/
+  │   │   ├─ UserForm.tsx
+  │   │   ├─ UserForm.module.scss
+  │   ├─ UserList/
+  │   │   ├─ UserList.tsx
+  │   │   ├─ UserList.module.scss
+  ├─ Hooks/
+  │   ├─ useUserApi.ts
+  ├─ App.tsx
+  ├─ index.tsx
+  ├─ index.css
+\`\`\`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Instalação
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone o repositório:
+   \`\`\`
+   git clone 
+   \`\`\`
+2. Instale as dependências:
+   \`\`\`
+   npm install
+   \`\`\`
+3. Inicie o servidor de desenvolvimento:
+   \`\`\`
+   npm start
+   \`\`\`
+4. Abra seu navegador e acesse \`http://localhost:3000\`.
 
-## Deploy on Vercel
+## Como Usar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Ao abrir o aplicativo, você verá um formulário para adicionar um novo usuário.
+2. Preencha os campos **Nome** e **Email** e clique em "Adicionar" para inserir um novo usuário na lista.
+3. Para editar um usuário, clique no botão "Editar" ao lado do nome do usuário. Isso preencherá o formulário com os dados do usuário selecionado. Faça as alterações e clique em "Atualizar".
+4. Para excluir um usuário, clique no botão "Excluir". Uma janela modal aparecerá pedindo confirmação. Clique em "Sim" para confirmar a exclusão.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contribuição
+
+Contribuições são bem-vindas! Se você deseja melhorar este projeto, sinta-se à vontade para enviar um pull request.
+
+1. Fork o projeto
+2. Crie uma nova branch (\`git checkout -b minha-feature\`)
+3. Faça suas alterações e adicione-as (\`git add .\`)
+4. Faça um commit das suas alterações (\`git commit -m 'Adicionando uma nova feature'\`)
+5. Envie para o seu repositório (\`git push origin minha-feature\`)
+6. Abra um Pull Request
+
+## Licença
+
+Este projeto é licenciado sob a [MIT License](LICENSE).
+
+## Contato
+
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato.
+`;
+
